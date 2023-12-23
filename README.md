@@ -56,13 +56,8 @@ curl --location 'http://127.0.0.1:8000/api/v1/tasks' \
 
 ```bash
 # Get a specific Task
-curl --location --request GET 'http://127.0.0.1:8000/api/v1/tasks/77d6a7c9-0111-40a2-a731-6a67703fd72d' \
---header 'Content-Type: application/json' \
---header 'Authorization: Basic c2htYXg6UGFzc3dvcmQxMg==' \
---data '{
-    "task": "Fix boiler",
-    "due_date": "2023-12-31"
-    }'
+curl --location 'http://127.0.0.1:8000/api/v1/tasks/77d6a7c9-0111-40a2-a731-6a67703fd72d' \
+--header 'Authorization: Basic c2htYXg6UGFzc3dvcmQxMg=='
 ```
 
 ```bash
@@ -79,10 +74,5 @@ curl --location --request PUT 'http://127.0.0.1:8000/api/v1/tasks/258bbee9-b180-
 ```bash
 # Delete a specific Task
 curl --location --request DELETE 'http://127.0.0.1:8000/api/v1/tasks/fc8af887-fa27-4153-9d8c-bd97029408bc' \
---header 'Content-Type: application/json' \
---header 'Authorization: Basic c2htYXg6UGFzc3dvcmQxMg==' \
---data '{
-    "task": "Clean up room and walk dog",
-    "due_date": "2023-12-30"
-    }'
+--header 'Authorization: Basic c2htYXg6UGFzc3dvcmQxMg=='
 ```
