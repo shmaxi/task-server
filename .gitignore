@@ -1,0 +1,9 @@
+.idea
+
+#python
+**__pycache__/
+**.DS_Store
+/venv
+
+# Packaged distributables
+api/v1/resources/crm/tests/.env
